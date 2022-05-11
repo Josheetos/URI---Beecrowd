@@ -1,0 +1,24 @@
+
+import java.util.*;
+public class Uri1046 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner input = new Scanner (System.in);	
+
+int A, B;
+A = input.nextInt();
+B = input.nextInt();
+input.close();
+if (A > B) {
+	System.out.println("O JOGO DUROU " + ((24 - A) + B) + " HORA(S)" );
+}else if (B > A){
+	System.out.println("O JOGO DUROU " + (B - A) + " HORA(S)");
+}else{
+	System.out.println("O JOGO DUROU 24 HORA(S)");
+}
+	}
+	
+	
+
+}
