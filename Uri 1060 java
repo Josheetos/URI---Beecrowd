@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Uri1060 {
+
+	public static void main(String[] args) {
+	Scanner input = new Scanner (System.in);
+double A, B, C, D, E, F;
+A = input.nextDouble();
+B = input.nextDouble();
+C = input.nextDouble();
+D = input.nextDouble();
+E = input.nextDouble();
+F = input.nextDouble();
+input.close();
+int percent = 0;
+if (A > 0) {
+	percent++;
+}
+if (B > 0) {
+	percent++;
+}
+if (C > 0) {
+	percent++;
+}
+if (D > 0) {
+	percent++;
+}
+if (E > 0) {
+	percent++;
+}
+if (F > 0) {
+	percent++;
+}
+System.out.println(percent + " valores positivos");
+}
+}
