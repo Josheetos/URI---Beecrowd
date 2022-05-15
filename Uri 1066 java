@@ -1,0 +1,85 @@
+import java.util.Scanner;
+public class Uri1065 {
+
+	public static void main(String[] args) {
+	Scanner input = new Scanner (System.in);
+double A, B, C, D, E;
+A = input.nextDouble();
+B = input.nextDouble();
+C = input.nextDouble();
+D = input.nextDouble();
+E = input.nextDouble();
+
+input.close();
+int par = 0;
+int negativo = 0;
+int impar = 0;
+int positivo = 0;
+
+if (A % 2 == 0) {
+	par++;
+}
+if (B % 2 == 0) {
+	par++;
+}
+if (C % 2 == 0) {
+	par++;
+}
+if (D % 2 == 0) {
+	par++;
+}
+if (E % 2 == 0) {
+	par++;
+}
+if (A % 2 != 0) {
+	impar++;
+}
+if (B % 2 != 0) {
+	impar++;
+}
+if (C % 2 != 0) {
+	impar++;
+}
+if (D % 2 != 0) {
+	impar++;
+}
+if (E % 2 != 0) {
+	impar++;
+}
+if (A > 0) {
+	positivo++;
+}
+if (B > 0) {
+	positivo++;
+}
+if (C > 0) {
+	positivo++;
+}
+if (D > 0) {
+	positivo++;
+}
+if (E > 0) {
+	positivo++;
+}
+if (A < 0) {
+	negativo++;
+}
+if (B < 0) {
+	negativo++;
+}
+if (C < 0) {
+	negativo++;
+}
+if (D < 0) {
+	negativo++;
+}
+if (E < 0) {
+	negativo++;
+}
+
+System.out.println(par + " valor(es) par(es)");
+System.out.println(impar + " valor(es) impar(es)");
+System.out.println(positivo + " valor(es) positivo(s)");
+System.out.println(negativo + " valor(es) negativo(s)");
+}
+}
