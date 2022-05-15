@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Uri1065 {
+
+	public static void main(String[] args) {
+	Scanner input = new Scanner (System.in);
+double A, B, C, D, E;
+A = input.nextDouble();
+B = input.nextDouble();
+C = input.nextDouble();
+D = input.nextDouble();
+E = input.nextDouble();
+
+input.close();
+int percent = 0;
+if (A % 2 == 0) {
+	percent++;
+}
+if (B % 2 == 0) {
+	percent++;
+}
+if (C % 2 == 0) {
+	percent++;
+}
+if (D % 2 == 0) {
+	percent++;
+}
+if (E % 2 == 0) {
+	percent++;
+}
+System.out.println(percent + " valores pares");
+}
+}
